@@ -1,0 +1,37 @@
+//Partial scss file
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+  // Defines wat 1rem is
+  font-size: 62.5%; /* It is bad practice to declare font size in px. 16px / 10px */
+
+  @include respond(tab-land) {
+    font-size: 56.25%; // 9/16 to make 8px;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; // 8/16 to make 8px;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; // 9/16 to make 8px;
+  }
+
+body{
+  box-sizing: border-box;
+  padding: 3rem; /*From now on any measurements I use in pxs must be reverted to rem to make my life easier when it comes to making my page responsive*/
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+
+}
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}

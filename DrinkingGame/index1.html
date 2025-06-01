@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <!--  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">-->
+    <script src="https://kit.fontawesome.com/4f8be11c15.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Truth Or Drink </title>
+</head>
+
+<body class="background ">
+    <div class="backOfplayer"> 
+
+         <div class="playerForm">
+          <form action="" class="form-player">
+              <input type="text" class="playerName" placeholder="Player Name">
+              <div class="buttonsDiv">
+                  <button class="addPlayerBtn" type='button'> Add Player </button>
+                  <button class="startGameBtn"> Play Game! </button>
+              </div>
+           </form> 
+        </div>
+    </div>
+
+
+    <main class="main">
+        <!--      1/4 Width-->
+        <div class="ruleContainer">
+
+            <div class="ruleList"> </div>
+        
+        </div>
+
+        <!--     width of 90% -->
+
+
+        <div class="newCardContainer">        
+            <div class="newCard invis">
+              <div class="questions__card">
+               
+                <h1 class="change">Enter Question</h1>
+                
+                <div class="nextCardBtnDiv">
+                 <button type="button" class="newCardBtn"> Next Card </button> 
+                </div>
+
+                <div class="ruleForm floatAndSize invis">
+                  <form id="addRuleForm">
+                    <input type="text" class="ruleInput">
+                    <button type="button" class="ruleInputBtn newCardBtn">Add Item</button>
+                  </form>
+                </div>
+             </div>  
+            </div>
+        </div>
+
+        <!--
+        <div class="ruleForm invis">
+                <form id="addRuleForm">
+                  <h1>Make A Rule</h1>
+                  <input type="text" class="ruleInput">
+                  <button type="button" class="ruleInputBtn">Add Item</button>
+                </form>
+              </div>
+        -->
+
+        <div class="form__playerList ">
+            <div class="playerList"></div>
+        </div>
+        <!--      2/4 width-->    
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

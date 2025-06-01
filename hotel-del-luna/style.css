@@ -1,0 +1,332 @@
+:root {
+    --green: #2BE593;
+    --grey: #EBEBEB;
+    --dark-grey : #332D2D;
+}
+* {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-rows: [header-start] 80vh [header-end] repeat(3, minmax(40vh, max-content)) min-content;
+    grid-template-columns: 1fr repeat(8, minmax(min-content, 14rem)) 1fr;
+    font-size: 2rem;
+}
+
+.header {
+    background-image: linear-gradient(to right bottom, rgba(52, 46, 46, 0.37), rgba(46, 44, 44, 0.37)), url("assets/pexels-photo-258154.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* ADD GREY DIV ABOVE THIS */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    position: relative;
+    grid-row: header-start / header-end;
+    grid-column: 1/ -1;
+}
+
+.header h1 {
+    font-size: 6rem;
+    color: #fff;
+}
+
+.header i {
+    color: var(--green);
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 4;
+}
+
+
+/* CHECK IN BOX */
+.checkin-box {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 75%;
+    background-color: #fff;
+    color: var(--dark-grey);
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 0.5rem;
+
+}
+
+.mobile-checkin-box {
+    display: none;
+}
+
+.box {
+    width: 100%;
+    padding: 2rem 2rem;
+    margin: 2rem 0;
+    border-right: 1px solid #000;
+    font-size: 2rem;
+}
+.box h4 {
+    text-align: left;
+    font-size: 1.5rem;
+}
+.box a, .box a:visited {
+    text-decoration: none;
+    color: var(--dark-grey);
+    font-size: 2rem;
+}
+.box a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+select {
+    border: none;
+    font-size: 2rem;
+    color: var(--green);
+}
+option {
+    border: none;
+    color: #000;  
+}
+
+.guest-children {
+    border: none;
+}
+
+.guest-info-submit {
+    height: min-content;
+    align-self: center;
+    justify-self: center;
+    margin: 0 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--green);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: all .4s;
+}
+
+.guest-info-submit:hover {
+    transform: scale(1.1);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 4px 15px -4px rgba(51,45,45,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 0px 4px 15px -4px rgba(51,45,45,0);
+}
+/* ABOUT  */
+.about {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    display: flex;
+    padding:  7rem 4rem;
+    background-color: var(--grey);
+}
+
+.about--image {
+    width: 50%;
+    /* aspect-ratio: 1/1; */
+}
+
+.about--image img {
+    width: 100%;
+    padding: 2rem;
+}
+
+.about--text {
+    width: 50%;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.about h2 {
+    color: var(--green);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+
+/* ROOM PRICES */
+.room--prices {
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 7rem 0;
+    
+}
+.room-item {
+    width: 30%;
+}
+
+.room--prices-img img {
+    width: 100%;
+}
+
+.room-prices-text {
+    font-size: 2rem;
+    text-align: center;
+     color: var(--green);
+}
+
+.room-prices-text h3 {
+    font-size: 2.5rem;
+    color: #000;
+   
+}
+
+/* RESTAURANT */
+.restaurant {
+    grid-row: 4/5;
+    grid-column: 1/-1;
+    font-size: 5rem;
+    background-color: var(--grey);
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--green);
+}
+
+.restaurant h2 {
+    margin-bottom: 3rem;
+}
+
+.restaurant--img {
+    width:60%;
+    margin: 0 auto;
+}
+.restaurant img {
+    width: 100%;
+}
+
+/* FOOTER */
+
+.footer {
+    grid-row: 5/6;
+    grid-column: 1/-1;
+    font-size: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 3rem 0;
+    text-align: center;
+}
+.footer--article {
+    width: 33%;
+     
+ }
+ 
+
+.footer i {
+    font-size: 10rem;
+    color: var(--green);
+    margin-top: 1.5rem;
+}
+
+/* MEDIA QUERYS */
+@media only screen and (max-width: 1100px) {
+
+    .container-grid {
+        grid-template-rows: [header-start] 80vh [header-end] repeat(4, minmax(40vh, max-content)) min-content;
+    }
+
+    /* Check in box */
+    .checkin-box {
+    display: none;
+    }
+
+    .box {
+        border-bottom: 1px solid var(--dark-grey);
+        border-right: none;
+    }
+
+    .mobile-checkin-box {
+        display: block;
+        grid-column: 1/-1;
+        grid-row: header-end / 3;
+        width: 60%;
+        font-size: 2rem;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .box h4 {
+        margin-bottom: 1rem;
+    }
+    .guest-info-submit {
+        margin-bottom: 2rem;
+    }
+  .about {
+      flex-direction: column;
+      text-align: center;
+      grid-row: 3/4;
+    }
+ 
+    .about div {
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+    }
+
+    /* Room */
+    .room--prices {
+        flex-direction: column;
+        padding: 0 2rem;
+        grid-row: 4 / 5;
+    }
+
+    .room-item {
+        width: 90%;
+        align-self: center;
+        justify-self: center;
+        grid-row: 4/5;
+    }
+
+    .restaurant {
+        grid-row: 5/6;
+    }
+
+    .footer {
+        grid-row: 6 / 7;
+        font-size: 4rem;
+    }
+
+    .footer i {
+        font-size: 5rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .footer {
+        font-size: 5rem;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+    }
+
+    .footer--article {
+        width: 100%;
+        margin: 1.5rem 0;
+    }
+
+
+    .footer i {
+        font-size: 5rem;
+    }
+  }

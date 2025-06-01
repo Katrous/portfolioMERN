@@ -1,0 +1,261 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+   font-family: cursive;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+
+.background {
+    background-image: url("istockphoto-1152678186-170667a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form input {
+    margin: 2rem;
+}
+#addRuleForm input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+    border-radius: 2rem;
+    border: none;
+}
+
+.playerForm {
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFB1DA;
+  width: 55rem;
+  height: 25rem;
+  border-radius: 8rem;
+  background-size: cover;
+  box-shadow: 0 2px 200px black;
+  overflow: hidden;
+  border: none;
+  text-align: center;
+  opacity: 70%;
+}
+.form-player {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.playerForm input {
+    border-radius: 2rem;
+    padding: 1.5rem;
+    width: 40rem;
+    color: #EFEEFE;
+    background-color: #EB5FB0;
+    border: none;
+    font-size: 2rem;
+    font-family: inherit;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
+.playerForm input::placeholder {
+  color: #EFEEFE;
+} 
+.playerForm button {
+    padding: 1.7rem;
+    border-radius: 2rem;
+    width: 15rem;
+    margin: 0 1rem;
+    font-family: inherit;
+    border: none;
+}
+.buttonsDiv {
+    display: block;
+    margin-top: 2rem;
+}
+.playerList {
+    float: right;
+    display: flex;
+    font-size: 2rem;
+    font-weight: 600;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+}
+.item {
+    /* min-height: 50px; */
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 50px;
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #ff8cc7;
+    border-bottom: 0.5px solid rgb(153, 43, 153);
+}
+
+.item p {
+    align-self: center;
+}
+
+.active {
+    color:#F69DD3;
+    background: #fff;
+  }
+
+.form__playerList {
+    width: 20%;
+    float: left;
+}
+
+.main {   
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+}
+.main-body {
+    padding: 5rem;
+    width: 80%;
+    background-color: red;
+    align-content: center;
+    justify-content: center;
+}
+
+.newCardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+.newCard {
+    width: 60%;
+    height: fit-content;
+    border-radius: 4rem;  
+    background: rgb(212, 32, 212, 0.3);
+    position: relative;
+    top: 45%;
+    transform: translateY(-45%);  
+    display:flex;
+    justify-content: center;
+
+}
+
+.questions__card {
+    color: white;
+    opacity: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 5rem;
+    font-size: 1.5rem;
+    width: 50%;
+    text-align: center;
+/*
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+*/ 
+    
+     
+    
+}
+.nextCardBtnDiv {
+   /* position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    margin-top: 3rem;
+}
+.newCardBtn {
+    width: 20rem;
+    height: 5rem;
+    border-radius: 3rem;
+    background: rgb(248, 180, 219, 0.8);
+    border: none;
+}
+
+.ruleContainer {
+    overflow: hidden;
+    width: 20%;
+    font-size: 1.5rem;
+    
+}
+.ruleList {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    min-height: 50%;
+    font-size: 2rem;
+    overflow: hidden;
+    width: 100%;
+    justify-content: space-around;
+    
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    
+    
+}
+.rulesLabel {
+    font-size: 2rem;
+    
+    
+}
+.ruleDes {
+    display: inline-block;
+    color: #f7d9e9;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.ruleLines {
+   margin: 3rem 0;
+}
+.remove__btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #f7d9e9;
+    font-weight: 800;
+    margin-left: 1rem;
+}
+
+
+.ruleInputBtn {
+    margin-top: 5rem;
+}
+.invis {
+    display: none;
+}
+
+input[type=text]:hover {
+    outline: none;
+}
+
