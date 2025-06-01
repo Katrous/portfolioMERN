@@ -215,6 +215,13 @@ header {
     column-gap: 3rem;
     row-gap: 2rem;
     padding: 0 5rem 10rem 5rem;
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+}
+.photoGrid h2 {
+    size: 100%;
+    display: block;
 }
 .tablet {
     display: none;
@@ -459,7 +466,6 @@ ul li {
     margin: 0 1rem;
     font-size: 7rem;
 }
-
 
 /* MEDIA QUERY */
 @media only screen and (max-width: 1200px) {
